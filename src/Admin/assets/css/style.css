@@ -272,6 +272,21 @@ ul.top-menu>li>.logout {
     margin-left: -210px;
 }
 
+.nav-data-table {
+    display: inline-block;
+}
+
+#file-up2 {
+    max-width: 200px;
+    max-height: 150px;
+    line-height: 20px;
+}
+
+#file-up1 {
+    width: 200px;
+    height: 150px;
+}
+
 /*LEFT NAVIGATION ICON*/
 .dcjq-icon {
     height: 17px;

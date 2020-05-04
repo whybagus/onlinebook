@@ -4,7 +4,6 @@ import axios from 'axios';
 import { withRouter } from 'react-router-dom';
 import cookie from 'js-cookie';
 import { connect } from 'react-redux';
-// import ButtonLogin from '../atom/ButtonLogin';
 
 class LoginComponent extends Component{
     
@@ -28,7 +27,6 @@ class LoginComponent extends Component{
                     data: res.data
                 }
             })
-            // cookie.set("user", JSON.stringify(res.data.data.user))
             cookie.set("token", res.data.data.token)
             this.props.setLogin(res.data.data.user)
             if (this.state.login === false) {
@@ -36,7 +34,6 @@ class LoginComponent extends Component{
             }
             this.props.history.push('/dashboard') 
             console.log(this.state)
-            // this.authenticated(res)
         })
         .catch((err) => console.log(err))
     }
@@ -46,7 +43,6 @@ class LoginComponent extends Component{
         await this.setState({
             formValue: change
         })
-        // console.log(this.state.formValue)
     }
     render() { 
        

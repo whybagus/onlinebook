@@ -1,10 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import './../../assets/img/img3.jpg'
-import {withRouter } from 'react-router-dom';
+import {withRouter, Link } from 'react-router-dom';
 class Sidebar extends Component {
-  dataTable = () => {
-    this.props.history.push("/data_table")
-  }
     render(){
         return (
             <div id="sidebar" className="nav-collapse ">
@@ -18,7 +15,7 @@ class Sidebar extends Component {
                       </a>
                   </li>
                   <li class="sub-menu">
-                  <a onClick={this.dataTable} to="/data_table">
+                  <a onClick={} id="data_table" to="/data_table">
                     <i class="fa fa-th"></i>
                     <span>Data Tables</span>
                     </a>
